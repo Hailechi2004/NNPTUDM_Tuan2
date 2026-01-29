@@ -1,4 +1,9 @@
 {
+  "scripts": {
+    "start": "npx json-server db.json & timeout /t 2 /nobreak > nul & start test.html",
+    "start:win": "start \"\" cmd /c \"npx json-server db.json\" && timeout /t 2 /nobreak > nul && start test.html",
+    "dev": "npx json-server db.json"
+  },
   "dependencies": {
     "json-server": "^1.0.0-beta.5"
   }
